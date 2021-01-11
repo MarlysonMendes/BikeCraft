@@ -3,7 +3,7 @@
   -moz-box-sizing: border-box; 
   box-sizing: border-box;
 }
-
+/*  O container vai dimensionar o nosso grid */
 .container {
 	width: 960px;
 	margin: 0 auto;
@@ -11,6 +11,13 @@
 	position: relative;
 }
 
+/* clearfix  */
+/* Se um contanier tive apenas elementos flutuantes ele vai acabar sem altura
+alguma portanto é necessário usar esses comandos float possuem as suas características
+ignoradas pelo elemento pai (container) por isso para injetar elemento depois edeum float
+é necessario limpar a flutuação */
+/* : after e :before criam pseudos elementos antes e depois o content vai adicionar conteudo
+nesses elementos e o clear vai limpar o float desse pseudo elemento e o both vai limpar em ambos os lados left e rigth */
 .container:after, .container:before {
 	content: " ";
 	display: table;
@@ -20,6 +27,7 @@
 	clear: both;
 }
 
+/* Partes do grid */
 .grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7, .grid-8, .grid-9, .grid-10, .grid-11, .grid-12, .grid-13, .grid-14, .grid-15, .grid-16, .grid-1-3 {
 	float: left;
 	margin-left: 10px;
