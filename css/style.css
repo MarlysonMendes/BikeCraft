@@ -28,6 +28,11 @@ img{
 	color: #000;
 	border-color: #000;
 }
+.btn-preto{
+	color: #fec63e;
+	border-color: #fec63e;
+	border: 3px solid #fec63e;
+}
 .subtitulo{
 	font-size: 24px;
 	font-weight: bold;
