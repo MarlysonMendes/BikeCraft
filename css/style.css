@@ -9,6 +9,7 @@ p{
 }
 img{
 	display: block;
+	max-width: 100%;
 }
 .btn{
 	border: 3px solid #fec63e;
@@ -184,6 +185,9 @@ img{
 	background: #fec63e;
 
 }
+.produtos_list li img{
+	margin: 0 auto;
+}
 .produtos_icone{
 	background: #000;
 	padding: 20px;
@@ -248,6 +252,7 @@ img{
 	background: url("../img/linhas.svg") no-repeat center;
 	position: absolute;
 	top: 209px;
+	z-index: -1;
 	right: 162px;
 }
 .qualidade img{
