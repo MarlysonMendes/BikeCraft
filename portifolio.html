@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="stylesheet" href="css/portifolio.css">
 		<link rel="stylesheet" href="css/responsivo.css">
+		<script>document.documentElement.classList.add('js')</script>
 	</head>
 	<body>
 			<header class= "header">
@@ -68,10 +69,15 @@
 			</section>
 
 			<section class="portifolio">
-				<div class="container">
+				<div class="container" data-slide="portifolio">
 					<ul class="portifolio_list">
 						<li class="grid-8" > <img src="img/portfolio/retro.jpg" alt="Bicicleta Retro" > </img> </li>
 						<li class="grid-8"> <img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio" > </img> </li>
+						<li class="grid-16"> <img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte" > </img> </li>
+					</ul>
+					<ul class="portifolio_list">
+						<li class="grid-8"> <img src="img/portfolio/passeio.jpg" alt="Bicicleta Passeio" > </img> </li>
+						<li class="grid-8" > <img src="img/portfolio/retro.jpg" alt="Bicicleta Retro" > </img> </li>
 						<li class="grid-16"> <img src="img/portfolio/esporte.jpg" alt="Bicicleta Esporte" > </img> </li>
 					</ul>
 				</div>
@@ -127,7 +133,9 @@
 
 
 			</footer>
+			<script src="./js/simple-anime.js"></script>
 			<script src="./js/simple-slide.js"></script>
 			<script src="./js/script.js"></script>
+
 	</body>
 </html>
